@@ -2,7 +2,7 @@
 
 ######################################
 model with architecture to publish laravel package
-######################################
+
 ### Install ###
 ```sh
 $ composer install
