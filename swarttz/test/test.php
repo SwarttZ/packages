@@ -17,5 +17,5 @@ $data = array_map(function ($item) {
     return $item;
 }, $f);
 
-echo "<h1>Teste de classes abstrações PHP</h1><hr>";
-echo 'Nome: ' . $data[0]['name'] . '<br>' . 'email: ' . $data[0]['email'] . PHP_EOL;
+echo "<h1>Testing abstraction classes PHP and publish package laravel framework</h1><hr>";
+echo 'Name: ' . $data[0]['name'] . '<br>' . 'email: ' . $data[0]['email'] . PHP_EOL;
