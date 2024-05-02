@@ -1,9 +1,13 @@
-# PACKAGE ESTRUTURA PADRÃO PARA O FRAMEWORK LARAVEL
-### Instalação
+# PACKAGE STANDARD STRUCTURE FOR LARAVEL FRAMEWORK
+
+######################################
+model with architecture to publish laravel package
+######################################
+### Install ###
 ```sh
 $ composer install
 ```
-### Ficha técnica
+### Datasheet ###
 
     [Ger. Projeto]: Leandro M. Lino 
     
