@@ -1,7 +1,7 @@
 # PACKAGE ESTRUTURA PADRÃO PARA O FRAMEWORK LARAVEL
 ### Instalação
 ```sh
-$ composer install --no-scripts
+$ composer install
 ```
 ### Ficha técnica
 
