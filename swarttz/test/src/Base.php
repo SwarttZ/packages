@@ -6,7 +6,8 @@ namespace Swarttz\Test;
 define('BASE_PATH', realpath(__DIR__ . '../../'));
 
 use Dotenv\Dotenv as Dotenv;
-use Swarttz\Test\Action\Database;
+use PDOException;
+use Swarttz\Test\Services\Database;
 
 class Base
 {
@@ -21,8 +22,11 @@ class Base
         $user = getenv('DB_USER');
         $password = getenv('DB_PASSWORD');
 
-
-        $db = new Database("mysql:host=$host;port=$port;dbname=$name", $user, $password);
-        return $db;
+        try {
+            $db = new Database("mysql:host=$host;port=$port;dbname=$name", $user, $password);
+            return $db;
+        } catch (PDOException $e) {
+            return 'Error: ' . $e;
+        }
     }
 }

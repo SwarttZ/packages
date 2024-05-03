@@ -1,6 +1,6 @@
 <?php
 
-namespace Swarttz\Test\Action;
+namespace Swarttz\Test\Services;
 
 use PDO;
 use PDOException;
