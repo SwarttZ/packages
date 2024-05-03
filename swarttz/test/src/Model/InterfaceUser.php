@@ -10,7 +10,7 @@ interface InterfaceUser
     public function getAll(): array;
 
     /*
-    *  @return int
+    *  @return array
     */
     public function findById($id): array;
 }
