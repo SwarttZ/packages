@@ -6,4 +6,4 @@ use Swarttz\Test\Model\UserModel;
 $user = new UserModel();
 
 //dd(['All' => $user->getAll()]);
-//dd(['ID' => $user->findById(1)]);
+dd(['ID' => $user->findById(1)]);

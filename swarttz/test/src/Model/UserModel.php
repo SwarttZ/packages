@@ -30,7 +30,8 @@ class UserModel implements InterfaceUser
     public function findById($id): array
     {
         try {
-            $query = $this->connection->prepare('select * from users where id = ' . $id);
+            $query = $this->connection->prepare('select * from users where id = :id');
+            $query->bindParam(':id', $id);
             $query->execute();
             $fetch = $query->fetchAll(PDO::FETCH_ASSOC);
 
