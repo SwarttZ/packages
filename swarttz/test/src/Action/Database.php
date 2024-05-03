@@ -25,7 +25,7 @@ class Database
             $this->connection = new PDO($this->dsn, $this->user, $this->password);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch (PDOException $e) {
-            return die('Error na conexão com o banco de dados: ' . $e);
+            return die('Not connect to database: ' . $e);
         }
     }
     public function getConnection()
